@@ -49,23 +49,15 @@ Usage
 
 ### Methods
 
-TBHideableTableViewColumns extends NSTableView using several methods.
+In order to use it, you just have to call the following method. That will set everything by automatically: refresh the last state of your NSTableView, or start listening for columns change.
 
 ```
 - (void)createHideableColumnContextualMenuWithAutoResizingColumns:(BOOL)autoResizingColumns identifierException:(NSArray *)identifierException;
 ```
 
-In order to use it, you just have to call the following method. That will set everything by automatically: refresh the last state of your NSTableView, or start listening for columns change.
-
 The contextual menu will display your column title. If this one is nil, it will use do a `NSLocalizedString` on the identifier, and display it.
 
 For more information on this categories, take a look at the .h, it's well documented.
-
-```
-- (void)resizingAllColumn;
-```
-
-Resize all columns to fit their contents.
 
 ### Localizables
 
