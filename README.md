@@ -59,17 +59,7 @@ In order to use it, you just have to call the following method. That will set ev
 
 The contextual menu will display your column title. If this one is nil, it will use do a `NSLocalizedString` on the identifier, and display it.
 
-**Parameters:**
-
-- `autoResizingColumns`: pass YES if you want to display `Auto-resizing all columns` in your contextual menu
-- `identifierException`: column's identifiers you want to display permanently.
-
-
-```
-- (void)hideColumnWithIdentifiers:(NSArray *)identifiers;
-```
-
-This method is usefull if you want to hide by default some columns. Just pass their identifiers to `identifiers` 
+For more information on this categories, take a look at the .h, it's well documented.
 
 ```
 - (void)resizingAllColumn;
